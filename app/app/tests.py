@@ -1,12 +1,14 @@
-'''
+"""
 Sample tests
-'''
+"""
 
 from django.test import SimpleTestCase
 from . import calc
 
-class CalcTests(SimpleTestCase): 
+
+class CalcTests(SimpleTestCase):
     """Test the calc module"""
+
     def test_add_numbers(self):
         """Test that two numbers are added together"""
         res = calc.add(3, 8)
